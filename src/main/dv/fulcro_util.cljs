@@ -16,7 +16,7 @@
     [com.fulcrologic.fulcro.ui-state-machines :as sm :refer [defstatemachine]]
     [com.fulcrologic.guardrails.core :refer [>defn => ?]]
     [com.fulcrologic.semantic-ui.modules.transition.ui-transition :refer [ui-transition]]
-    [dv.cljs-emotion-reagent :refer [defstyled]]
+    ;; [dv.cljs-emotion-reagent :refer [defstyled]]
     [edn-query-language.core :as eql]
     [goog.events :as events]
     [goog.object :as gobj]
@@ -555,7 +555,7 @@
                     (dom/td (pr-str v))))
              m)))))))
 
-(defstyled hover-hand :div {":hover" {:cursor "pointer"}})
+;; (defstyled hover-hand :div {":hover" {:cursor "pointer"}})
 
 ;; with the specs, invoking this with a string would cause an infinite recursion loop.
 (defn uuid
